@@ -37,7 +37,7 @@ public class TurmaAlunos {
     }
 
     public Set<Aluno> alunosOrdemAlfabetica () {
-        //requesito para um objeto ser usado no treeSet é ser comparable (e é na classe aluno.java)
+        //requisito para um objeto ser usado no treeSet é ser comparable (e é na classe aluno.java)
         return alunos
                 .values()
                 .stream()
