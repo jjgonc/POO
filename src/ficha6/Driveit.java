@@ -124,7 +124,7 @@ public class Driveit implements Serializable {
         }
     }
 
-    public void classificarVeiculo (String cod, int classificacao) throws VeiculoInexistenteException, ValoresInvalidosException{        //nao entendi bem este...
+    public void classificarVeiculo (String cod, int classificacao) throws VeiculoInexistenteException, ValoresInvalidosException{  
         if (! driveit_v.containsKey(cod)) {
             throw new VeiculoInexistenteException();
         }
@@ -250,7 +250,7 @@ public class Driveit implements Serializable {
         return this.driveit_v.values().stream()
                 .sorted(c)
                 .map(Veiculo::clone)
-                .collect(Collectors.toCollection(TreeSet::new));    //isto fiz por mim, mas o professor fez:  ()-> new TreeSet <> (c)
+                .collect(Collectors.toCollection(TreeSet::new));    // o professor fez:  ()-> new TreeSet <> (c)
     }
 
     //alinea e)
@@ -260,23 +260,6 @@ public class Driveit implements Serializable {
         return this.driveit_v.values().stream()
                 .sorted(comparator)
                 .iterator();
-        /*                                                          //nao funciona
-        if (comparadores.containsKey(criterio)) {
-            return ordenarVeiculo(comparadores.get(criterio)).iterator();
-        }
-        else {
-            return new Iterator<Veiculo>() {
-                @Override
-                public boolean hasNext() {
-                    return false;
-                }
-
-                @Override
-                public Veiculo next() {
-                    return null;
-                }
-            };
-        }*/
     }
 
 
