@@ -34,21 +34,7 @@ public class Ficha2_ex5 {
         return ("Biggest string inserted is: " +biggest);
     }
 
-    /*
-    porque nao funcionava assim com a funçao compareTo??? experimentei com:
-    size = 5
-    array que passei: [ola; tudo; bem; contigo?; comigo tambem, pbrigado!]
 
-    public static String biggest (String [] arr) {
-        String biggest = arr[0];    //a maior inicializamos como a primeira string que passamos, caso haja uma maior, entao trocamos
-        for (int i=0; i<arr.length; i++) {
-            if (arr[i].compareTo(biggest) > 0) {
-                biggest = arr[i];
-            }
-        }
-        return ("Biggest string inserted is: " +biggest);
-    }
-     */
 
     public static String moreThanOnce (String [] arr) {
         String [] res = new String [arr.length];
