@@ -11,7 +11,6 @@ public class Ficha2_ex5_Main {
         int size = sc.nextInt();
         String temp, res;
         String [] arr = new String [size];
-        //como fazer o preenchimento da string??? (apagar antes perguntar)
         for (int i = 0; i < size; i++){
             System.out.println("Insert string number " + (i + 1));
             temp = st.nextLine();
